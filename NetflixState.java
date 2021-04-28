@@ -1,4 +1,8 @@
-public class NetflixState {
+
+
+
+
+public class NetflixState implements State{
     private TV tv;
 
     private static final String[] MOVIES = {"Bench Warmers", "Step Brothers", "War Dogs", "The Wolf of Wall Street", "Up"};
