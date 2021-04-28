@@ -9,31 +9,33 @@ public class HuluState implements State{
     }
 
     public void pressHomeButton() {
-        System.out.println("Loading the Home Screen...");
+        System.out.println("Loading the Home Screen...\n");
         tv.setState(tv.getHomeState());
     }
 
     public void pressNetflixButton() {
-        System.out.println("Loading Netflix...");
+        System.out.println("Loading Netflix...\n");
         tv.setState(tv.getNetflixState());
     }
 
     public void pressHuluButton() {
-        System.out.println("We are already in Hulu");
+        System.out.println("We are already in Hulu\n");
     }
 
     public void pressMovieButton() {
-        System.out.println("Hulu Movies: ");
+        System.out.println("Hulu Movies: \n");
         for (String movie: MOVIES){
             System.out.println("- " +movie);
         }
+        System.out.println("\n");
     }
 
     public void pressTVButton() {
-        System.out.println("Hulu TV Shows: ");
+        System.out.println("Hulu TV Shows: \n");
         for (String show: TV_SHOWS){
             System.out.println("- " +show);
         }
+        System.out.println("\n");
     }
 
 

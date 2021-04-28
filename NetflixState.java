@@ -13,31 +13,33 @@ public class NetflixState implements State{
     }
 
     public void pressHomeButton() {
-        System.out.println("Loading the Home Screen...");
+        System.out.println("Loading the Home Screen...\n");
         tv.setState(tv.getHomeState());
     }
 
     public void pressNetflixButton() {
-        System.out.println("We are already in Netflix");
+        System.out.println("We are already in Netflix\n");
     }
 
     public void pressHuluButton() {
-        System.out.println("Loading Hulu...");
+        System.out.println("Loading Hulu...\n");
         tv.setState(tv.getHuluState());
     }
 
     public void pressMovieButton() {
-        System.out.println("Netflix Movies: ");
+        System.out.println("Netflix Movies: \n");
         for (String movie: MOVIES){
             System.out.println("- " +movie);
         }
+        System.out.println("\n");
     }
 
     public void pressTVButton() {
-        System.out.println("Netflix TV Shows: ");
+        System.out.println("Netflix TV Shows: \n");
         for (String show: TV_SHOWS){
             System.out.println("- " +show);
         }
+        System.out.println("\n");
     }
 
 
