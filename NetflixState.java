@@ -1,5 +1,9 @@
-
-
+/**
+ * This class extends from the interface State. In this class, we introduce two arrays that contain
+ * the tv shows and the movies. We also call the button methods here, where they indicate the proper
+ * action.
+ * @author rosesatriano
+ */
 
 
 public class NetflixState implements State{
@@ -12,20 +16,32 @@ public class NetflixState implements State{
         this.tv = tv;
     }
 
+    /**
+     * This method changes to the home state and displays that it is doing so.
+     */
     public void pressHomeButton() {
         System.out.println("Loading the Home Screen...\n");
         tv.setState(tv.getHomeState());
     }
 
+    /**
+     * This method displays that we are already in this state.
+     */
     public void pressNetflixButton() {
         System.out.println("We are already in Netflix\n");
     }
 
+    /**
+     * This method changes to the hulu state and displays that it is doing so.
+     */
     public void pressHuluButton() {
         System.out.println("Loading Hulu...\n");
         tv.setState(tv.getHuluState());
     }
 
+    /**
+     * This method calls the movies array to display.
+     */
     public void pressMovieButton() {
         System.out.println("Netflix Movies: \n");
         for (String movie: MOVIES){
@@ -34,6 +50,9 @@ public class NetflixState implements State{
         System.out.println("\n");
     }
 
+    /**
+     * This method calls the tv shows array to display.
+     */
     public void pressTVButton() {
         System.out.println("Netflix TV Shows: \n");
         for (String show: TV_SHOWS){
